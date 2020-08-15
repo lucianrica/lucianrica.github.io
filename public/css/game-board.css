@@ -1,0 +1,71 @@
+:root {
+  --rows-cols: 0;
+}
+
+::selection { background: transparent; }
+
+.board {
+    position: relative;
+    grid-column: 1/4;
+    height: 670px;
+    display: grid;
+    grid-template-columns: repeat(var(--rows-cols), minmax(20px, 1fr));
+    grid-template-rows: repeat(var(--rows-cols), minmax(20px, 1fr));
+    gap: 3px;
+}
+
+.hidden  {
+    background-color: #90c1d78c;
+    cursor: pointer;
+}
+
+.hidden:hover {
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.board>div {
+    vertical-align: top; 
+    margin: 0;
+    padding: 0; 
+    border: 0.5px solid rgba(110, 110, 110, 0.137);
+    border-radius: 2px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.7em;
+}
+
+.info-board button {
+    margin: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.info-board {    
+    border: 2px solid #90c1d78c;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+}
+
+.info>h3 {
+    justify-self: center;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .hide-on-mobile {
+      display: none;
+  }
+  .title {
+      grid-column: 2/4;
+  }
+}
+
+
+
+
+
+
