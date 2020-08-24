@@ -26,6 +26,11 @@ body {
   font-size: 14px;
 }
 
+html {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
+
 
 @media only screen and (min-width: 1440px) {
   body{

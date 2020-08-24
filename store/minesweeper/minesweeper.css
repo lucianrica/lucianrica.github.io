@@ -1,0 +1,90 @@
+.grid-game-minesweeper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 50px 0;
+  align-content: center;
+  justify-items: center;
+}
+
+#game-board {
+  max-width: 1000px;
+  justify-self: center;
+}
+
+
+
+:root {
+  --rows-cols: 0;
+}
+
+::selection {
+  background: transparent;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(var(--rows-cols), 25px);
+  grid-template-rows: repeat(var(--rows-cols), 25px);
+  gap: 3px;  
+}
+
+.hidden {
+  background-color: #90c1d78c;
+  cursor: pointer;
+}
+
+.hidden:hover {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+.board > div {
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  border: 0.5px solid rgba(110, 110, 110, 0.137);
+  border-radius: 2px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.7em;
+}
+
+.info-board button {
+  padding: 5px;
+  margin: 5px;
+  width: 80px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.info-board {
+  padding: 20px 0;
+  margin: 50px 0;
+  border: 2px solid #90c1d78c;
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+}
+
+.info > h3 {
+  justify-self: center;
+}
+
+.hide-on-mobile {
+    display: none;
+  }
+
+@media only screen and (min-width: 1000px) {
+
+  
+
+  .hide-on-mobile {
+    display: block;
+  }
+
+  .title {
+    grid-column: 2/4;
+  }
+}
