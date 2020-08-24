@@ -24,11 +24,11 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;  
   color: #515050;
   font-size: 14px;
+  min-height: 101vh;
 }
 
 html {
-    overflow: -moz-scrollbars-vertical; 
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 

@@ -122,7 +122,7 @@ class Cells extends React.Component {
 
 class Board extends React.Component {
   state = {
-    squares: 10,
+    squares: 15,
     bombs: 0.18,
     gameOver: false
   };
@@ -136,7 +136,7 @@ class Board extends React.Component {
     }
     const title = document.querySelector('.title')
     const info = document.querySelector('.info-board')
-    title.innerText = 'Game On'
+    title.innerText = ''
     info.style = 'background: #fff'
 
     this.setState({

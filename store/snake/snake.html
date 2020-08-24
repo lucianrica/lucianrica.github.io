@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property='og:title' content='Office Games' />
+  <meta property=' og:image' content='https://lucianrica.github.io/favicon.PNG' />
+  <meta property=' og:description' content='Fun Online Office Games and Activities That Make Work Awesome' />
+  <meta property=' og:url' content='https://lucianrica.github.io' />
+
+
+  <link rel="icon" type="image/png" href="favicon.PNG" />
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/top-navbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/content.css">
+  <link rel="stylesheet" type="text/css" href="./snake.css">
+
+
+  <link rel=stylesheet id="style" type="text/css" href="./css/main-snake.css" />
+  <link rel="shortcut icon" href="css/images/favicon.png" />
+  
+
+  <title>OFFICE GAMES</title>
+</head>
+
+
+<body>
+
+  <!-- Header -->
+  <header class="top-navbar">
+    <a href="/">
+      <div class="logo">
+        <p>OFFICE</p>
+        <small>GAMES</small>
+      </div>
+      <div class="triangle-down"></div>
+    </a>
+    <a href="/">STORE</a>
+    <a href="#">NEWS</a>
+    <a href="#">BLOG</a>
+  </header>
+
+  <div class="grid-game-snake">
+    <div class="snake-game-content">
+
+      <header class="header">
+        <h1>Snake Game</h1>
+      </header>
+
+
+
+
+      <div class="snake-toolbar">
+      
+        <div style="display:inline-block;margin-right:10px;">
+          <span>Select Difficulty:</span>
+          <select id="selectMode">
+            <option value="100">Easy</option>
+            <option value="75" selected>Medium</option>
+            <option value="50">Hard</option>
+          </select>
+        </div>
+        <!-- <button onclick="go_full_screen()">Full Screen</button><br /> -->
+      </div>
+
+
+
+
+        <div id="mode-wrapper" style="display: inline; width: auto;">
+        </div>
+        
+        <div id="game-area" tabindex="0">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+  </div>
+
+
+  
+
+  <!--
+      <h2>Select which mode you would like to play in.</h2>
+      <button id="Easy">Easy</button><br />
+      <button id="Medium">Medium</button><br />
+      <button id="Difficult">Difficult</button>
+
+<button id="high-score">Get your current high score for this game.</button>
+-->
+
+
+
+
+
+  <script type="text/javascript" src="./snake.js"></script>
+  <script type="text/javascript">
+    var mySnakeBoard = new SNAKE.Board({
+      boardContainer: "game-area",
+      fullScreen: true
+    });  
+
+    // var mySnakeBoard = new SNAKE.Board({
+    //     boardContainer: "game-area",
+    //     fullScreen: false,
+    //     width: 580,
+    //     height: 400
+    //   });
+
+  </script>
+  <!-- <script type="text/javascript">
+    function go_full_screen() {
+      var elem = document.documentElement;
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen();
+      } else if (elem.mozRequestFullScreen) {
+        elem.mozRequestFullScreen();
+      } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen();
+      }
+    }
+  </script> -->
+</body>
+
+
+
+
+
+
+<!-- <body>
+
+  
+
+
+
+  
+  <content class="grid-store-page">
+    <iframe src="https://playsnake.org/" title="W3Schools Free Online Web Tutorials"></iframe>
+
+
+    <div class="store-promo">
+      <header class="header">Discover</header>
+
+      <div class="store-promo-block">
+
+        <div class="store-promo-right">
+          <p class="promo-status">AVAILABLE NOW</p>
+          <h1 class="promo-title">Minesweeper</h1>
+          <p>
+            Single-player puzzle game.
+            Clear the board containing hidden "mines" without detonating any of them.
+          </p>
+          <a class="promo-action" href="./store/minesweeper/minesweeper.html">Play Now! ➝</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </content>
+
+
+
+
+
+  
+
+</body> -->
+
+</html>

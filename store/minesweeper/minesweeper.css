@@ -1,14 +1,30 @@
 .grid-game-minesweeper {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 3% 94% 3%;
+}
+
+.grid-game-minesweeper > * {
   margin: 50px 0;
-  align-content: center;
-  justify-items: center;
+}
+
+.game-content {
+  grid-column: 2/3;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  color: #333;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #game-board {
-  max-width: 1000px;
-  justify-self: center;
+  /* grid-column: 2/3; */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
 }
 
 
@@ -23,8 +39,8 @@
 
 .board {
   display: grid;
-  grid-template-columns: repeat(var(--rows-cols), 25px);
-  grid-template-rows: repeat(var(--rows-cols), 25px);
+  grid-template-columns: repeat(var(--rows-cols), minmax(25px, auto));
+  grid-template-rows: repeat(var(--rows-cols), minmax(25px, auto));
   gap: 3px;  
 }
 
@@ -66,10 +82,7 @@
   border-radius: 2px;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-}
-
-.info > h3 {
-  justify-self: center;
+  justify-items: center;
 }
 
 .hide-on-mobile {
@@ -77,14 +90,16 @@
   }
 
 @media only screen and (min-width: 1000px) {
-
-  
+  .grid-game-minesweeper {
+    grid-template-columns: 12% 76% 12%;
+  }
 
   .hide-on-mobile {
     display: block;
   }
 
-  .title {
-    grid-column: 2/4;
-  }
+ 
 }
+
+
+

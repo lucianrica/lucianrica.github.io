@@ -1,0 +1,123 @@
+body {
+  overflow-x: hidden;
+}
+
+.grid-game-snake {
+  display: grid;
+  grid-template-columns: 3% 94% 3%;
+}
+
+.grid-game-snake > * {
+  margin: 50px 0;
+}
+
+.snake-game-content {
+  grid-column: 2/3;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  color: #333;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.snake-toolbar {
+  padding: 20px 0;
+  margin: 50px 0 5px 0;
+  border: 2px solid #aad6888c;
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+#game-area:focus {
+  outline: none;
+}
+
+.snake-pause-screen {
+  position: absolute;
+  width: 300px;
+  height: 80px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -150px;
+  display: none;
+  background-color: #aad6888c;
+  border-radius: 2px;
+  border: 4px dashed #333;
+}
+
+.snake-panel-component {
+  position: absolute;
+  font-weight: 900;
+  text-align: center;
+  padding: 8px;
+  margin: 0px;
+}
+
+.snake-snakebody-block {
+  background-color: #33333340;
+  position: absolute;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+}
+
+.snake-food-block {
+  background-color: #33333380;  
+  border-radius: 4px;
+  position: absolute;
+}
+
+.snake-playing-field {
+  position: absolute;
+  background-color: #fff;
+  border: 2px dashed #fc5454;
+  border-radius: 2px;
+}
+
+.snake-game-container {
+  background-color: #fc545410;
+  border: 1px dashed #333;
+  border-radius: 2px;
+  position: relative;
+}
+
+.snake-welcome-dialog {
+  padding: 8px;
+  margin: 0px;
+  background-color: #aad6888c;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  border: 4px dashed #aad688;
+  margin-top: -100px;
+  margin-left: -158px;
+  text-align: center;
+  display: block;
+}
+
+.snake-try-again-dialog,
+.snake-win-dialog {
+  padding: 8px;
+  margin: 0px;
+  background-color: #aad6888c;
+  border-radius: 2px;
+  border: 4px dashed #fc5454;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 100px;
+  margin-top: -75px;
+  margin-left: -158px;
+  text-align: center;
+  display: none;
+}
