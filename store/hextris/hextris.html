@@ -112,22 +112,6 @@
 				return false;
 			}
 		};
-
-		var preventDefault = function (e) {
-			e.preventDefault();
-		};
-		var touchstart = function (e) {
-			document.addEventListener('touchstart', preventDefault, false);
-			document.addEventListener('touchmove', preventDefault, false);
-			/*do other stuff*/
-		};
-		var touchend = function (e) {
-			document.removeEventListener('touchstart', preventDefault, false);
-			document.removeEventListener('touchmove', preventDefault, false);
-		};
-
-		element.addEventListener('touchstart', touchstart, false);
-		element.addEventListener('touchend', touchend, false);
 	</script>
 
 </body>
