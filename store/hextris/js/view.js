@@ -96,7 +96,8 @@ function toggleClass(element, active) {
 function showText(text) {
 	var messages = {
 		'paused': "<div class='centeredHeader unselectable'>Game Paused</div>",	
-		'pausedOther': "<div class='centeredHeader unselectable'>Game Paused</div><div class='unselectable centeredSubHeader' style='margin-top:10px;position:absolute;left:50%;margin-left:-190px;max-width:380px;font-size:18px;'></div>",
+		'pausedOther': "<div class='centeredHeader unselectable'>Game Paused</div>",
+		'pausedAndroid': "<div class='centeredHeader unselectable'>Game Paused</div>",
 		'start': "<div class='centeredHeader unselectable' style='line-height:80px;'>Press enter to start</div>"
 	};
 
@@ -186,12 +187,12 @@ function pause(o) {
 		$('#fork-ribbon').fadeOut(300, 'linear');
 		$('#restartBtn').fadeOut(300, "linear");
 		$('#buttonCont').fadeOut(300, "linear");
-		if ($('#helpScreen').is(':visible')) {
-			$('#helpScreen').fadeOut(300, "linear");
-		}
+		// if ($('#helpScreen').is(':visible')) {
+		// 	$('#helpScreen').fadeOut(300, "linear");
+		// }
 
 		$("#pauseBtn").attr("src", "./images/btn_pause.svg");
-		$('.helpText').fadeOut(300, 'linear');
+		// $('.helpText').fadeOut(300, 'linear');
 		$('#overlay').fadeOut(300, 'linear');
 		hideText();
 		setTimeout(function() {
@@ -201,7 +202,7 @@ function pause(o) {
 	} else if (gameState != -2 && gameState !== 0 && gameState !== 2) {
 		$('#restartBtn').fadeIn(300, "linear");
 		$('#buttonCont').fadeIn(300, "linear");
-		$('.helpText').fadeIn(300, 'linear');
+		// $('.helpText').fadeIn(300, 'linear');
 		if (message == 'paused') {
 			showText(message);
 		}

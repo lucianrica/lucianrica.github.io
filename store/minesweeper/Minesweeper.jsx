@@ -122,7 +122,7 @@ class Cells extends React.Component {
 
 class Board extends React.Component {
   state = {
-    squares: 15,
+    squares: 10,
     bombs: 0.18,
     gameOver: false
   };
@@ -175,7 +175,7 @@ class Board extends React.Component {
       <div>
         <div className="info-board">
           <button onClick={() => { this.restart(10) }}>S</button>
-          <button onClick={() => { this.restart(15) }}>M</button>
+          <button className="hide-on-mobile" onClick={() => { this.restart(15) }}>M</button>
           <h3 className="title"></h3>
           <button className="hide-on-mobile" onClick={() => { this.restart(20) }}>L</button>
           <button className="hide-on-mobile" onClick={() => { this.restart(25) }}>XL</button>
