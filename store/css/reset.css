@@ -21,9 +21,9 @@ body {
 
 body {
   /* overflow-x: hidden; */
-  font-family: "Segoe UI", Arial, sans-serif;  
+  font-family: "Segoe UI", Arial, sans-serif !important;  
   color: #515050;
-  font-size: 14px;
+  font-size: 14px !important;
   min-height: 101vh;
 }
 

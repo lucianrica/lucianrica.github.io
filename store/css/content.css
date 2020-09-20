@@ -60,6 +60,10 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   padding: 0;
+  justify-items: center;
+}
+.store-games > a {
+  max-width: 250px;
 }
 .store-games > a > img {
   width: 100%;
@@ -96,6 +100,13 @@
     display: flex;
     flex-direction: column;
   }
+  .store-games {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  
   .store-games {
     grid-template-columns: repeat(5, 1fr);
   }
