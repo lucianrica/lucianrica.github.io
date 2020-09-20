@@ -64,7 +64,7 @@
 .store-games > a > img {
   width: 100%;
   border-radius: 3px;
-  min-height: 320px;
+  height: 320px;
 }
 
 .store-games > a:hover {
